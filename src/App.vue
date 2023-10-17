@@ -1,16 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="slide">
+    <FormVue></FormVue>
+  </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FormVue from './components/FormVue.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FormVue,
   }
+  
 }
 </script>
 
@@ -21,6 +25,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width:100%;
+  height:100vh;
+
+  .slide{
+    display: flex;
+  }
 }
 </style>
